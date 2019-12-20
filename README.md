@@ -30,26 +30,28 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. Describe the biggest difference between `.forEach` & `.map`.
 
-The methods, .forEach and .map are similar in that they execute a function invoked upon each element of the array. The difference is that .forEach doesn't return a new array and allows for array mutation, while .map returns a new array.
+    The methods, .forEach and .map are similar in that they execute a function invoked upon each element of the array. The difference is that .forEach doesn't return a new array and allows for array mutation, while .map returns a new array.
 
 2. What is the difference between a function and a method?
 
-A function and a method are both pieces of code the can be invoked by name. The main difference between them is that data passed into a function is explicitly passed whereas the method is implicity passed data based on the object it was invoked upon. There isn't much difference between them, but the big one being that methods are assoicated with object invocation.
+    A function and a method are both pieces of code the can be invoked by name. The main difference between them is that data passed into a function is explicitly passed whereas the method is implicity passed data based on the object it was invoked upon. There isn't much difference between them, but the big one being that methods are assoicated with object invocation.
 
 3. What is closure?
 
-Closure in JavaScript is basically the ability of a function to have access to outer variables within it's scope chain to the global scope going up (out towards parent and not down to children). Closure is when an inner function can access variable from the parent function and the global scope. But the inverse does not work. A function, does not have access to the variables within another function of a different scope OR the variables declard by it's children (inner) functions. Variables can be passed 'down' (to children functions) but not the inverse 'passed up'. 
+    Closure in JavaScript is basically the ability of a function to have access to outer variables within it's scope chain to the global scope going up (out towards parent and not down to children). Closure is when an inner function can access variable from the parent function and the global scope. But the inverse does not work. A function, does not have access to the variables within another function of a different scope OR the variables declard by it's children (inner) functions. Variables can be passed 'down' (to children functions) but not the inverse 'passed up'. 
 
 
 
 4. Describe the four rules of the 'this' keyword.
 
-  1. The 1st principle of the 'this' keyword is default or global binding. Global binding means that the 'this' keyword refers to the object of the console.
-  2. The 2nd principle is Implicit binding. Implicit binding refers to the object referenced before (to the left) the dot when being invoked.
-  3. The 3rd is Explicit binding which is the type of binding 'this' becomes while using JavaScript's methods apply or call. When we call specific objects with .call or .apply functions, 'this' refers to them explicitly. 
-  4. The 4th is New Binding which is when when we use object constructor functions, 'this' then refers to a specific instance of an object being referred to. In this case 'this' refers' to constructor function that create 'new' objects, hence new binding.
+    - The 1st principle of the 'this' keyword is default or global binding. Global binding means that the 'this' keyword refers to the object of the console.
+    - The 2nd principle is Implicit binding. Implicit binding refers to the object referenced before (to the left) the dot when being invoked.
+    - The 3rd is Explicit binding which is the type of binding 'this' becomes while using JavaScript's methods apply or call. When we call specific objects with .call or .apply functions, 'this' refers to them explicitly. 
+    - The 4th is New Binding which is when when we use object constructor functions, 'this' then refers to a specific instance of an object being referred to. In this case 'this' refers' to constructor function that create 'new' objects, hence new binding.
 
 5. Why do we need super() in an extended class?
+
+    We need the super() method in extended classes so that the constructor function inherits the properties already set in place by it's parent constructor function.
 
 ## Project Set up
 
